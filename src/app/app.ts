@@ -1,13 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { CardBook } from './components/card-book/card-book';
+import { ListBooks } from './components/list-books/list-books';
+import { LiteraryGenre } from './components/literary-genre/literary-genre';
 
 @Component({
   selector: 'app-root',
   imports: [
     Header, 
-    CardBook,
+    ListBooks,
+    LiteraryGenre,
     Footer
   ],
   templateUrl: './app.html',

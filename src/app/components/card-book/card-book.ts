@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Book } from './book';
 
 @Component({
   selector: 'app-card-book',
@@ -7,9 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './card-book.css'
 })
 export class CardBook {
-  livro = {
-    titulo: 'O Senhor dos Anéis',
-    autoria: 'J.R.R. Tolkien',
-    image: 'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/91/32/20224832.jpg'
+
+  book = input.required<Book>();
+
+  defineFavorite(){
+    this.book().favorite = !this.book().favorite;
   }
 }

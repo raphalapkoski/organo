@@ -1,0 +1,4 @@
+.highlighted-line--big {
+  width: 64px;
+  border-bottom: 4px solid var(--color-primaria);
+}
