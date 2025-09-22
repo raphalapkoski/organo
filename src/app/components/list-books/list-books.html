@@ -2,3 +2,7 @@
     <h2 class="text-title">Minhas leituras</h2>
     <span class="highlighted-line highlighted-line--big"></span>
 </section>
+
+@for (genre of genres; track genre.id){
+    <app-literary-genre [genre]="genre"></app-literary-genre>
+}

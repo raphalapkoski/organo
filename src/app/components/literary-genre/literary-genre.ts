@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CardBook } from '../card-book/card-book';
-import { Book } from '../card-book/book';
+import { Genre } from '../card-book/book';
 import { BOOKS } from '../../mock-books';
 
 @Component({
@@ -10,5 +10,6 @@ import { BOOKS } from '../../mock-books';
   styleUrl: './literary-genre.css'
 })
 export class LiteraryGenre {
-  book: Book = BOOKS[0];
+  genre = input.required<Genre>();
+  book = BOOKS[0]
 }

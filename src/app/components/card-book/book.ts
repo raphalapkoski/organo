@@ -9,5 +9,5 @@ export interface Book {
 export interface Genre {
     id: string;
     value: string;
-    livros: Book[];
+    books: Book[];
 }

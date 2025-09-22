@@ -1,1 +1,9 @@
-<app-card-book [book]="book"></app-card-book>
+<section class="genres">
+    <h3 class="text-h3-gray">{{ genre().value }}</h3>
+    <span class="highlighted-line highlighted-line--small"></span>
+</section>
+<div class="books-genre">
+    @for (book of genre().books; track book) {
+        <app-card-book [book]="book"></app-card-book>
+    }
+</div>
