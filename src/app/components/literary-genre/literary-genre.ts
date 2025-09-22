@@ -11,5 +11,4 @@ import { BOOKS } from '../../mock-books';
 })
 export class LiteraryGenre {
   genre = input.required<Genre>();
-  book = BOOKS[0]
 }

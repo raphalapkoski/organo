@@ -4,6 +4,11 @@
 </section>
 <div class="books-genre">
     @for (book of genre().books; track book) {
-        <app-card-book [book]="book"></app-card-book>
+    <app-card-book [book]="book"></app-card-book>
+    }@empty {
+    <div class="books-empty">
+        <img src="sem-livros.png" alt="Sem livros cadastrados para esse gênero"/>
+        <p class="text-books-empty">Não há livros cadastrados para esse gênero!</p>
+    </div>
     }
 </div>
