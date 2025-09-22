@@ -1,11 +1,14 @@
 import { Component, input } from '@angular/core';
 import { CardBook } from '../card-book/card-book';
 import { Genre } from '../card-book/book';
-import { BOOKS } from '../../mock-books';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-literary-genre',
-  imports: [CardBook],
+  imports: [
+    CardBook, 
+    CommonModule
+  ],
   templateUrl: './literary-genre.html',
   styleUrl: './literary-genre.css'
 })

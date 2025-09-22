@@ -1,6 +1,5 @@
 section {
-  width: 262px;
-  min-height: 382px;
+  width: 240px;
   margin: 8px;
   display: flex;
   flex-direction: column;
@@ -12,8 +11,16 @@ section {
   padding-top: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-left: 64px;
+  border-top: 24px solid;
 }
 
+.romance {
+    border-color: #82CFFA;
+}
+
+.action {
+    border-color: #DB6EBF;
+}
 
 section .image {
   margin-top: 32px;

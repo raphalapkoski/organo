@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="book().genre.id">
     <button class="btn-favorite" (click)="defineFavorite()">
         <span>{{ book().favorite ? '\u2764' : '\u2661' }}</span>
     </button>

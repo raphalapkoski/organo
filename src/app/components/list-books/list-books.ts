@@ -29,9 +29,9 @@ export class ListBooks implements OnInit {
         books: this.bookForGenre.get('romance') ?? []
       },
       {
-        id: 'acao',
+        id: 'action',
         value: 'Ação',
-        books: this.bookForGenre.get('acao') ?? []
+        books: this.bookForGenre.get('action') ?? []
       }
     ]
   }

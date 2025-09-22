@@ -1,14 +1,16 @@
-<section class="genres">
-    <h3 class="text-h3-gray">{{ genre().value }}</h3>
-    <span class="highlighted-line highlighted-line--small"></span>
-</section>
-<div class="books-genre">
-    @for (book of genre().books; track book) {
-    <app-card-book [book]="book"></app-card-book>
-    }@empty {
-    <div class="books-empty">
-        <img src="sem-livros.png" alt="Sem livros cadastrados para esse gênero"/>
-        <p class="text-books-empty">Não há livros cadastrados para esse gênero!</p>
+<section class="genres" [ngClass]="genre().id">
+    <h3 class="text-h3-gray">
+        {{ genre().value }}
+        <span class="highlighted-line highlighted-line--small" [ngClass]="genre().id"></span>
+    </h3>
+    <div class="books-genre">
+        @for (book of genre().books; track book) {
+        <app-card-book [book]="book"></app-card-book>
+        }@empty {
+        <div class="books-empty">
+            <img src="sem-livros.png" alt="Sem livros cadastrados para esse gênero" />
+            <p class="text-books-empty">Não há livros cadastrados para esse gênero!</p>
+        </div>
+        }
     </div>
-    }
-</div>
+</section>

@@ -38,3 +38,19 @@
   color: #3b3b3b;
   font-size: 20px;
 }
+
+.romance {
+    background-color: #E8FFFF;
+}
+
+.genres .romance {
+    border-bottom: 4px solid #82CFFA;
+}
+
+.action {
+    background-color: #FFF0FA;
+}
+
+.genres .action {
+    border-bottom: 4px solid #DB6EBF;
+}
